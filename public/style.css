@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    padding: 1rem;
+    background-color: #433b6b;
+    font-family: sans-serif, "Noto Color Emoji";
+}
+
+@font-face {
+    font-family: "Noto Color Emoji";
+    src: url(https://gitcdn.xyz/repo/googlefonts/noto-emoji/master/fonts/NotoColorEmoji.ttf);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+}
+
+a.active {
+    color: white;
+    font-size: large;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+}
+
+.logo {
+    font-size: x-large;
+    color: white;
+}
