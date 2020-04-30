@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Lunch mates</title>
-    <link rel="stylesheet" href="style.css" defer>
+  <title>Lunch mates</title>
+  <link rel="stylesheet" href="style.css" defer>
+  <script src="lunches.js"></script>
 </head>
+
 <body>
-    <nav class="menu">
-      <a href="#" class="logo">Lunch Mates 🍔</a>
-        <ul>
-          <li class="menu-item"><a href="#" class="active">View</a></li>
-          <li class="menu-item"><a href="#">Schedule</a></li>
-          <li class="menu-item"><a href="#">History</a></li>
-        </ul>
-      </nav>
+  <nav class="menu">
+    <button class="navbar-toggler"><span class="toggler-icon"></span></button>
+    <a href="#" class="logo">Lunch Mates 🍔</a>
+    <ul>
+      <li class="menu-item"><a href="#" class="active nav-item" onclick="changeColor(this)">View</a></li>
+      <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">Schedule</a></li>
+      <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">History</a></li>
+    </ul>
+  </nav>
 </body>
+
 </html>
