@@ -12,3 +12,12 @@ const openMenu = () => {
         item.classList.add("mobile-hidden");
     }
 };
+
+const openParticipants = () => {
+    let participants = document.querySelector(".participants");
+    if (participants.classList.contains("hidden")) {
+        participants.classList.remove("hidden");
+    } else {
+        participants.classList.add("hidden");
+    }
+};

@@ -56,10 +56,6 @@ ul {
     visibility: hidden;
 }
 
-.mobile-hidden {
-    display: none;
-}
-
 .card {
     background-color: #E6E6FA;
     width: 75%;
@@ -104,6 +100,24 @@ h3 {
 
 .content {
     margin-top: 1rem;
+}
+
+.participant-item {
+    background-color: white;
+    padding: 1em;
+    font-size: 1.1rem;
+}
+
+.participants {
+    margin: 1em;
+}
+
+.participant-item:hover {
+    background-color: #e8f2f5;
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 990px) {
