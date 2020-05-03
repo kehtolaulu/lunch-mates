@@ -4,19 +4,34 @@
 <head>
   <title>Lunch mates</title>
   <link rel="stylesheet" href="style.css" defer>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="lunches.js"></script>
 </head>
 
 <body>
-  <nav class="menu">
-    <button class="navbar-toggler"><span class="toggler-icon"></span></button>
-    <a href="#" class="logo">Lunch Mates 🍔</a>
-    <ul>
-      <li class="menu-item"><a href="#" class="active nav-item" onclick="changeColor(this)">View</a></li>
-      <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">Schedule</a></li>
-      <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">History</a></li>
-    </ul>
-  </nav>
+  <div class="page">
+    <nav class="menu">
+      <div class="logo-container">
+        <button class="navbar-toggler" onclick="openMenu()"><span class="toggler-icon"></span></button>
+        <a href="#" class="logo">Lunch Mates 🍔</a>
+      </div>
+      <ul class="menu-items mobile-hidden">
+        <li class="menu-item"><a href="#" class="active nav-item" onclick="changeColor(this)">View</a></li>
+        <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">Schedule</a></li>
+        <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">History</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="card">
+        <h3>Place name</h3>
+        <p>Address</p>
+        <p>08.08.2018 15:45</p>
+        <h2 class="blue-text">Participants <span class="count-badge">10</span></h2>
+        <button class="participate-button">Participate</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

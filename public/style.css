@@ -1,11 +1,15 @@
-body {
+html, body {
+    width: 100%;
     margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 nav {
     padding: 1rem;
     background-color: #433b6b;
     font-family: sans-serif, "Noto Color Emoji";
+    width: 100%;
 }
 
 @font-face {
@@ -52,7 +56,60 @@ ul {
     visibility: hidden;
 }
 
+.mobile-hidden {
+    display: none;
+}
+
+.card {
+    background-color: #E6E6FA;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+p {
+    margin: 0;
+}
+
+.page {
+    display: block;
+}
+
+.blue-text {
+    color: #007bff;
+}
+
+.participate-button {
+    padding: 0.5rem;
+    color: white;
+    background-color: #007bff;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.count-badge {
+    font-size: 0.7em;
+    background-color: #007bff;
+    color: white;
+    border-radius: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.3em;
+    padding-right: 0.36em;
+}
+
+h3 {
+    margin: 0;
+}
+
+.content {
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 990px) {
+    body {
+        margin: 0px;
+    }
     .toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         display: inline-block;
@@ -68,7 +125,34 @@ ul {
         border: 1px solid rgba(255, 255, 255, 0.75);
         visibility: visible;
     }
+    .menu {
+        display: block;
+    }
+    .mobile-hidden {
+        display: none;
+    }
     .menu-item {
-        visibility: hidden;
+        display: block;
+        padding: 1rem;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    nav {
+        padding: 0rem;
+        background-color: transparent;
+    }
+    .logo-container {
+        background-color: #433b6b;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    ul {
+        background-color: #433b6b;
+        padding: 0;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
     }
 }
