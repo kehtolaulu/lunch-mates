@@ -3,6 +3,7 @@
     --violet: #433b6b;
     --lavanda: #E6E6FA;
     --mint: #e8f2f5;
+    --font: sans-serif, "Noto Color Emoji";
 }
 
 html, body {
@@ -15,7 +16,7 @@ html, body {
 nav {
     padding: 1rem;
     background-color: var(--violet);
-    font-family: sans-serif, "Noto Color Emoji";
+    font-family: var(--font);
     width: 100%;
 }
 
@@ -67,6 +68,7 @@ ul {
     background-color: var(--lavanda);
     width: 75%;
     margin: 0 auto;
+    margin-bottom: 1rem;
     padding: 1rem;
 }
 
