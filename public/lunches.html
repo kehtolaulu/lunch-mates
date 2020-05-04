@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lunch mates</title>
+  <link rel="stylesheet" href="style.css" defer>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="lunches.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <nav class="menu">
+      <div class="logo-container">
+        <button class="navbar-toggler" onclick="openMenu()"><span class="toggler-icon"></span></button>
+        <a href="#" class="logo">Lunch Mates 🍔</a>
+      </div>
+      <ul class="menu-items mobile-hidden">
+        <li class="menu-item"><a href="#" class="active nav-item" onclick="changeColor(this)">View</a></li>
+        <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">Schedule</a></li>
+        <li class="menu-item"><a href="#" class="nav-item" onclick="changeColor(this)">History</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="card">
+        <h3>Place name</h3>
+        <p>Address</p>
+        <p>08.08.2018 15:45</p>
+        <h2 class="blue-text" onclick="openParticipants()">Participants <span class="count-badge">4</span></h2>
+        <div class="participants hidden">
+          <p class="participant-item">Emilia Garipova</p>
+          <p class="participant-item">Adelya Garipova</p>
+          <p class="participant-item">Gulnara Garipova</p>
+          <p class="participant-item">Ravil Garipov</p>
+        </div>
+        <button class="participate-button">Participate</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
