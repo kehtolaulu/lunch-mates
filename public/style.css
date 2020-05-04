@@ -1,3 +1,10 @@
+:root {
+    --blue: #007bff;
+    --violet: #433b6b;
+    --lavanda: #E6E6FA;
+    --mint: #e8f2f5;
+}
+
 html, body {
     width: 100%;
     margin: 0px;
@@ -7,7 +14,7 @@ html, body {
 
 nav {
     padding: 1rem;
-    background-color: #433b6b;
+    background-color: var(--violet);
     font-family: sans-serif, "Noto Color Emoji";
     width: 100%;
 }
@@ -57,7 +64,7 @@ ul {
 }
 
 .card {
-    background-color: #E6E6FA;
+    background-color: var(--lavanda);
     width: 75%;
     margin: 0 auto;
     padding: 1rem;
@@ -72,20 +79,20 @@ p {
 }
 
 .blue-text {
-    color: #007bff;
+    color: var(--blue);
 }
 
 .participate-button {
     padding: 0.5rem;
     color: white;
-    background-color: #007bff;
+    background-color: var(--blue);
     border-radius: 0.5rem;
     border: none;
 }
 
 .count-badge {
     font-size: 0.7em;
-    background-color: #007bff;
+    background-color: var(--blue);
     color: white;
     border-radius: 2em;
     padding-top: 0.2em;
@@ -113,7 +120,7 @@ h3 {
 }
 
 .participant-item:hover {
-    background-color: #e8f2f5;
+    background-color: var(--mint);
 }
 
 .hidden {
@@ -156,13 +163,13 @@ h3 {
         background-color: transparent;
     }
     .logo-container {
-        background-color: #433b6b;
+        background-color: var(--violet);
         padding: 1rem;
         display: flex;
         justify-content: space-between;
     }
     ul {
-        background-color: #433b6b;
+        background-color: var(--violet);
         padding: 0;
     }
     nav a {
