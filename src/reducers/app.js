@@ -3,38 +3,6 @@ import {
     ADD_LUNCH
 } from '../constants/actionTypes';
 
-// const initialState = {
-//     lunches: [
-//         {
-//             id: "String"
-//             participants: [
-//                 {
-//                     id: "String",
-//                     name: "String"
-//                 }
-//             ],
-//             datetime: "2020-02-02 15:45",
-//             place: "String",
-//             address: "String"
-//         }
-//     ]
-// }
-
-// const participants = (state = { participants: [] }, action) => {
-//     switch (action.type) {
-//         case ADD_PARTICIPANT:
-//             return [
-//                 ...state,
-//                 {
-//                     id: action.id,
-//                     name: action.name
-//                 }
-//             ]
-//         default:
-//             return state;
-//     }
-// };
-
 const lunches = (state = [
     {
         id: "1",
