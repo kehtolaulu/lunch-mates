@@ -13,8 +13,8 @@ const openMenu = () => {
     }
 };
 
-const openParticipants = () => {
-    let participants = document.querySelector(".participants");
+const openParticipants = (element) => {
+    let participants = document.querySelector();
     if (participants.classList.contains("hidden")) {
         participants.classList.remove("hidden");
     } else {
